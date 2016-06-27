@@ -1,7 +1,36 @@
 img {
     width: 200px;
+    margin-left: 100px;
 }
 body {
-    text-align: center;
+    text-align: left;
     font-family: cursive;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/SF_From_Marin_Highlands3.jpg");
+    background-size:cover;
+}
+.pro { 
+    display: inline-block;
+    vertical-align: top;
+}
+.text {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    
+}
+.picture {
+    display: inline-block;
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jq {
+    margin-left: 100px;
+}
+.text p { 
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
