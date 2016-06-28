@@ -1,0 +1,37 @@
+#easy {
+    width: 500px;
+    height: 280px;
+    border-color: black;
+    background-color: black;
+    font-size: 70px;
+    font-family: cursive;
+    color: black;
+    background: linear-gradient(to right, green,white,red );
+    background: url(https://static01.nyt.com/images/2006/05/25/world/25mexico600.jpg);
+
+}
+.falling {
+    background:url("https://yt3.ggpht.com/-KdgJnz1HIdQ/AAAAAAAAAAI/AAAAAAAAAAA/4vVN7slJqj4/s900-c-k-no-rj-c0xffffff/photo.jpg");
+    animation: jump 10s infinite linear;
+    width: 60px;
+    height: 60px;
+    margin-left: center
+
+}
+@keyframes jump
+{
+    0% 
+    {
+        transform: translateY(120px) translateX(300px);
+    } 
+    50%
+    {
+        transform: translateY(50px) translateX(50px);
+    }
+    100%
+    {
+        transform: translateY(99px) translateX(100px);
+    }
+    
+}
+
