@@ -25,7 +25,6 @@ function draw() {
     
     var isShifted = false;
     
-}
     var y = 0;
     while (y <= height) {
         
@@ -39,7 +38,7 @@ function draw() {
         
         while (x <= width) {
             fill(color(rVal, gVal, bVal));
-                if (Math.abs(mouseX-x) <  & && Math.abs(mouseY-y) < 15){
+                if (Math.abs(mouseX-x) > 15 && Math.abs(mouseY-y) < 15){
                 fill(color(247,202,201))
                 
             }
@@ -59,3 +58,4 @@ function draw() {
 
 
 
+}
