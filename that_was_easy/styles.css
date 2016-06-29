@@ -12,7 +12,7 @@
 }
 .falling {
     background:url("https://yt3.ggpht.com/-KdgJnz1HIdQ/AAAAAAAAAAI/AAAAAAAAAAA/4vVN7slJqj4/s900-c-k-no-rj-c0xffffff/photo.jpg");
-    animation: jump 10s infinite linear;
+    animation: jump 5s infinite linear;
     width: 60px;
     height: 60px;
     margin-left: center
@@ -22,11 +22,11 @@
 {
     0% 
     {
-        transform: translateY(120px) translateX(300px);
+        transform: translateX(350px) translateY(250px);
     } 
     50%
     {
-        transform: translateY(50px) translateX(50px);
+        transform: translateY(80px) translateX(px);
     }
     100%
     {
