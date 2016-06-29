@@ -19,9 +19,9 @@ function setup() {
 }
 
 function draw() {
-    rVal = 33;
-    gVal = 80;
-    bVal = 151;
+    rVal = 0;
+    gVal = 81;
+    bVal = 102;
     
     var isShifted = false;
     
@@ -39,10 +39,10 @@ function draw() {
         while (x <= width) {
             fill(color(rVal, gVal, bVal));
                 if (Math.abs(mouseX-x) > 15 && Math.abs(mouseY-y) > 15){
-                fill(color(247,202,201))
+                fill(color(0, 0, 0))
                 
             }
-            stroke(color(0, 0, 0 ));
+            stroke(color(255, 255, 255  ));
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
@@ -51,8 +51,8 @@ function draw() {
         isShifted = !isShifted;
         
         rVal = rVal -0
-        gVal = gVal +5
-        bVal = bVal +7
+        gVal = gVal +3
+        bVal = bVal +3
         
     }  
 
