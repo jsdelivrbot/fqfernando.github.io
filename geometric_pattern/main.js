@@ -19,9 +19,9 @@ function setup() {
 }
 
 function draw() {
-    rVal = 0;
-    gVal = 81;
-    bVal = 102;
+    rVal = 255;
+    gVal = 255;
+    bVal = 255;
     
     var isShifted = false;
     
@@ -42,7 +42,7 @@ function draw() {
                 fill(color(0, 0, 0))
                 
             }
-            stroke(color(255, 255, 255  ));
+            stroke(color(255, 186, 241));
             ellipse(x, y, circleDiameter, circleDiameter);
             x = x + circleDiameter;
         }
