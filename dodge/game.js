@@ -5,7 +5,7 @@ var enemyImage;
 var isGameOver;
 
 function preload() {
-    playerImage = loadImage("https://media2.giphy.com/media/NuE5MTECOmQsU/200_s.gif");
+    playerImage = loadImage("stick.png");
     enemyImage = loadImage("fire.png");
 }
 
@@ -19,7 +19,7 @@ function setup() {
     player.addImage(playerImage);
     enemy = createSprite(width/2, 0, 0, 0);
     enemy.addImage(enemyImage);
-    enemy.rotationspeed = 3.0;
+    enemy.rotationspeed = 4.0;
     
     
     
@@ -41,7 +41,7 @@ function draw() {
         player.position.x = player.position.x - 4
     }
     
-    enemy.position.y = enemy.position.y + 3;
+    enemy.position.y = enemy.position.y + 13;
     if(enemy.position.y > height) {
         enemy.position.y = 0;
         enemy.position.x = random(5, width-5)
