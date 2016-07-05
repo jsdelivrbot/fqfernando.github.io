@@ -6,7 +6,7 @@ var config = {
   };
   firebase.initializeApp(config);
   
-  var chatData = firebase.data().ref();
+  var chatData = firebase.database().ref();
   
   function pushMessage(event) {
        if (event.keyCode == 13) {
