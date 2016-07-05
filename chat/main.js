@@ -8,33 +8,43 @@ var config = {
   
   var chatData = firebase.database().ref();
   
+  var name = window.prompt("PLACE REAL NAME HERE");
+  console.log(name);
+  
+   $('#nameInput').val(name);
+  
   function pushMessage(event) {
-       if (event.keyCode == 13) {
-        var name = $('#nameInput').val();
+        if (event.keyCode == 13) {
         var text = $('#messageInput').val();
-        chatData.push({name: name, text: text});
-        $('#messageInput').val('');
+        chatData.push({name: name, text: text});  
+        
+      $('#messageInput').val('');
     }
   }
+  
+  
+$('#messageInput').keypress(pushMessage);
   
   chatData.on("child_added", showMessage);
 
 function showMessage(msg) {
     var message = msg.val();
     var messageSender = message.name;
-    var messageContet = message.text;
+    var messageContent = message.text;
     
     var messageEl = $("<div/>").addClass("message");
     var senderEl = $("<span/>").text(messageSender + ": ");
     var contentEl = $("<span/>").text(messageContent);
     
     messageEl.append(senderEl);
-    messageEl.append(senderEl);
+    messageEl.append(contentEl);
     $('#messages').append(messageEl);
+    
+    // var aSound = document.createElement('audio')
+    // aSound.setAttribute('src', 'note.mp3')
+    // aSound.play();
 
 
 }
-  
-  $('#messageInput').keypress(pushMessage);
   
   
