@@ -10,8 +10,8 @@ function setup() {
     
     frameRate(5);
     
-    circleDiameter = width/NUM_CIRCLES;
-    circleradius = circleDiameter/2;
+    // circleDiameter = width/NUM_CIRCLES;
+    // circleradius = circleDiameter/2;
     
     rVal = 255;
     gVal = 0;

@@ -40,9 +40,11 @@ function showMessage(msg) {
     messageEl.append(contentEl);
     $('#messages').append(messageEl);
     
-    // var aSound = document.createElement('audio')
-    // aSound.setAttribute('src', 'note.mp3')
-    // aSound.play();
+    if (keypress == typing)
+    
+    var aSound = document.createElement('audio')
+    aSound.setAttribute('src', 'note.mp3')
+    aSound.play();
 
 
 }
