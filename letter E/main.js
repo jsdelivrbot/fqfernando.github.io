@@ -1,18 +1,19 @@
 var rotate;
 var sound;
 
-// function playsound() {
-//     console.log("play sound 1");
-//     sound = new Audio("remix2.mp3");
-//     sound.play();
-//     console.log("play sound 2");
+function playsound() {
+    console.log("play sound 1");
+    sound = new Audio("remix.mp3");
+    sound.play();
+    console.log("play sound 2");
 
-// }
+}
 
 
 function setup() {
     createCanvas(1000, 600, WEBGL);
-    // sound = loadSound('remix2.mp3');
+    sound = loadSound('remix.mp3');
+    // song = loadSound('assets/lucky_dragons_-_power_melody.mp3');
 
     noStroke();
 
@@ -89,15 +90,15 @@ function draw() {
 
 }
 
-// function playSound(event) {
-//     console.log(event.keyCode);
-//     if (event.keyCode == 32) {
-//         console.log("dk 1");
-//         playsound();
-//         console.log("dk 2");
+function keyPressed(event) {
+    console.log(event.keyCode);
+    if (event.keyCode == 32) {
+        console.log("dk 1");
+        playsound();
+        console.log("dk 2");
 
-//     }
-// }
+    }
+}
 // console.log("one");
 // $(document).on("click", playsound);
 // console.log("two");
