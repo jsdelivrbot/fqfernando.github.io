@@ -3,7 +3,7 @@ var sound;
 
 function playsound() {
     console.log("play sound 1");
-    sound = new Audio("remix.mp3");
+    sound = new Audio("remix2.mp3");
     sound.play();
     console.log("play sound 2");
 

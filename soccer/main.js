@@ -16,7 +16,7 @@ function preload() {
     
 function setup(){
     createCanvas(900,500);
-    ball= createSprite(450, 250, 0, 0);
+    ball= createSprite(200, 383, 0, 0);
     ball.addImage(ballImage);
     ball.setSpeed(8,180);
     goall= createSprite(30,250,60,150);
